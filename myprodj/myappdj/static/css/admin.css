@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+
+.mainad {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Vollkorn', serif;
+    background-image: url("../img/img.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.main_box {
+    border: 2px solid rgb(226, 25, 176);
+    /* height: 600px; */
+    width: 750px;
+    border: 5px solid pink;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.ques_box {
+    height: 100px;
+    width: 450px;
+    background-color: wheat;
+    border: 3px solid rgb(234, 117, 207);
+    border-radius: 8px;
+    display: block;
+}
+
+.opt_box1,
+.opt_box2,
+.opt_box3 {
+    padding: 20px 150px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid rgb(221, 228, 192);
+    background-color: rgb(237, 170, 208);
+}
+
+.sub_ans {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, rgb(247, 175, 234), rgb(172, 177, 242), rgb(247, 247, 164));
+}

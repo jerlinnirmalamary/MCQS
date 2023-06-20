@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block cont %}
+{% load static %}
+<div class="main">
+
+    <h1>Sign-Up page</h1>
+
+
+    <div class="box">
+
+
+        <form method="POST">
+            {% csrf_token %}
+            {% if mydj %}
+            <label for="">Name</label><br>
+            <input type="text" placeholder="Enter the name" name="name1"><br>
+            <label for="">Email</label><br>
+            <input type="email" placeholder="Enter the email" name="email1"><br>
+            <label for="">Password</label><br>
+            <input type="Password" placeholder="Enter the pwd" name="pwd1"><br>
+            <input class="sub" type="submit">
+            {% else %}
+            <label>Name</label><br>
+            <input type="text" placeholder="Enter the name" name="name1"><br>
+            <label>Email</label>
+            <input type="email" placeholder="Enter the email" name="email1"><br>
+            <input class="sub" type="submit">
+
+            {% endif %}
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

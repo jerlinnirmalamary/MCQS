@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block cont %}
+{% load static %}
+<div class="back_box">
+    <div class="q_c">
+        {% for i in data %}
+        <a class="q" href="#{{ i.ind }}">{{ i.ind }}</a>
+        {% endfor %}
+    </div>
+
+
+    <h1 class="h1a">Anser page</h1>
+
+    {% for i in data %}
+    <div class="question" id="{{ i.ind }}" style="margin-bottom: 30px;">
+
+        <h2> {{ i.ind }}) {{i.question}}</h2>
+
+        {% for j in i.options %}
+
+        {% if j == i.ans %}
+
+        <li><span>{{ j }}</span>
+            {% else %}
+        <li>{{ j }}</li>
+
+        {% endif %}
+        {% endfor %}
+
+        {% endfor %}
+        </li>
+
+
+
+    </div>
+</div>
+
+{% endblock %}

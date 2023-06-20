@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block cont %}
+{% load static %}
+<div class="mainad">
+    <form method="POST">
+        {% csrf_token%}
+        <div class="main_box">
+            <div class="topic">
+                <h1>Mcqs question</h1>
+            </div>
+
+            <textarea class="ques_box" name="quest" cols="10" rows="10"></textarea>
+            <div class="options">
+                <input type="text" class="opt_box1" name="opt1"><br>
+                <input type="text" class="opt_box2" name="opt2"><br>
+                <input type="text" class="opt_box3" name="opt3"><br>
+            </div>
+            <div class="ansers" name="ans"></div>
+            <input type="submit" class="sub_ans">
+        </div>
+
+    </form>
+</div>
+{% endblock %}

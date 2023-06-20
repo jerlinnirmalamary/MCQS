@@ -1,0 +1,57 @@
+.back_box {
+    background-image: linear-gradient(to right, rgb(247, 175, 234), rgb(172, 177, 242));
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+}
+
+.question {
+    font-size: 20px;
+    color: #010606;
+
+}
+
+.h1a {
+    color: rgb(48, 15, 235);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-radius: 5px;
+    margin: 20px;
+    max-width: fit-content;
+    background-image: linear-gradient(to right, rgb(172, 177, 242), rgb(241, 140, 223));
+}
+
+span {
+
+    padding: 3px;
+    color: rgb(71, 20, 240);
+}
+
+.q_c {
+    height: 200vh;
+    position: fixed;
+    right: 0px;
+    overflow: scroll;
+
+    /* background-color: rgb(18, 205, 142); */
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px; */
+    padding: 5px;
+
+
+
+}
+
+.q {
+    height: 50px;
+    width: 40px;
+    background-color: palevioletred;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
